@@ -1,4 +1,4 @@
-direnv = ::File.join('/usr', 'local', 'bin', 'direnv')
+direnv = ::File.join(node['bin_dir'], 'direnv')
 
 remote_file direnv do
   source node['sprout']['direnv']['url']
