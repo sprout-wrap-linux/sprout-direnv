@@ -1,3 +1,4 @@
+include_recipe 'sprout-base::bin_dir'
 direnv = ::File.join(node['bin_dir'], 'direnv')
 
 remote_file direnv do
